@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Club Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .inline {
+            width: auto;
+        }
+        .btn-group {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .reset-btn {
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>College Club Registration Form</h2>
+    <form id="regForm">
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter full name" required>
+
+        <label>Roll Number:</label>
+        <input type="text" placeholder="Enter roll number" required>
+
+        <label>Department:</label>
+        <input type="text" placeholder="Enter department" required>
+
+        <label>Year of Study:</label>
+        <select required>
+            <option value="">--Select Year--</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" class="inline" required> Male
+        <input type="radio" name="gender" class="inline"> Female
+        <input type="radio" name="gender" class="inline"> Other
+        <br><br>
+
+        <label>Clubs Interested:</label><br>
+        <input type="checkbox" class="inline"> Music Club
+        <input type="checkbox" class="inline"> Dance Club
+        <input type="checkbox" class="inline"> Coding Club
+        <input type="checkbox" class="inline"> Sports Club
+        <br><br>
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" required>
+
+        <label>Upload Profile Photo:</label>
+        <input type="file" required>
+
+        <label>Short Description / Reason for Joining:</label>
+        <textarea rows="4" placeholder="Write something..." required></textarea>
+
+        <div class="btn-group">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+
+    </form>
+</div>
+
+<script>
+    document.getElementById("regForm").addEventListener("submit", function(event){
+        alert("Your form has been submitted successfully!");
+        event.preventDefault();
+    });
+</script>
+
+</body>
+</html>
