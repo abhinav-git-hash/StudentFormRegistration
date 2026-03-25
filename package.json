@@ -1,0 +1,13 @@
+{
+  "name": "bharat-english-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation for Bharat English personal practice",
+  "main": "automation.js",
+  "scripts": {
+    "start": "node automation.js",
+    "setup": "npx playwright install chromium"
+  },
+  "devDependencies": {
+    "playwright": "^1.44.0"
+  }
+}
