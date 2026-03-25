@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Playwright session – contains your login cookies; keep it private
+storageState.json
+
+# Playwright test artifacts
+test-results/
+playwright-report/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
